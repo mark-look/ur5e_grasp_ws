@@ -1,0 +1,24 @@
+[0.018s] Invoking command in '/home/mxr/ur5e_grasp_ws/build/robotiq_tactile_sdk_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mxr/ur5e_grasp_ws/src/ros/robotiq_tactile_sdk_vendor -DCMAKE_INSTALL_PREFIX=/home/mxr/ur5e_grasp_ws/install/robotiq_tactile_sdk_vendor
+[0.073s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.234s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.358s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.358s]   By not providing "Findament_cmake_vendor_package.cmake" in
+[0.358s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[0.358s]   configuration file provided by "ament_cmake_vendor_package", but CMake did
+[0.359s]   not find one.
+[0.359s] 
+[0.359s]   Could not find a package configuration file provided by
+[0.359s]   "ament_cmake_vendor_package" with any of the following names:
+[0.359s] 
+[0.359s]     ament_cmake_vendor_packageConfig.cmake
+[0.359s]     ament_cmake_vendor_package-config.cmake
+[0.359s] 
+[0.359s]   Add the installation prefix of "ament_cmake_vendor_package" to
+[0.359s]   CMAKE_PREFIX_PATH or set "ament_cmake_vendor_package_DIR" to a directory
+[0.359s]   containing one of the above files.  If "ament_cmake_vendor_package"
+[0.359s]   provides a separate development package or SDK, be sure it has been
+[0.359s]   installed.
+[0.359s] 
+[0.359s] [0m
+[0.362s] -- Configuring incomplete, errors occurred!
+[0.362s] Invoked command in '/home/mxr/ur5e_grasp_ws/build/robotiq_tactile_sdk_vendor' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mxr/ur5e_grasp_ws/src/ros/robotiq_tactile_sdk_vendor -DCMAKE_INSTALL_PREFIX=/home/mxr/ur5e_grasp_ws/install/robotiq_tactile_sdk_vendor

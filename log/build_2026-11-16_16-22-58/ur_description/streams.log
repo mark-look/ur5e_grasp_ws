@@ -1,0 +1,7 @@
+[0.019s] Invoking command in '/home/mxr/ur5e_grasp_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mxr/ur5e_grasp_ws/src/Universal_Robots_ROS2_Description -DCMAKE_INSTALL_PREFIX=/home/mxr/ur5e_grasp_ws/install/ur_description
+[0.038s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.222s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.229s] -- Found ament_cmake_pytest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)
+[0.952s] -- Configuring done (0.9s)
+[0.961s] -- Generating done (0.0s)
+[0.963s] -- Build files have been written to: /home/mxr/ur5e_grasp_ws/build/ur_description

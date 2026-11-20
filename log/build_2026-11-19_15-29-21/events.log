@@ -1,0 +1,16 @@
+[0.000000] (-) TimerEvent: {}
+[0.000259] (-) JobUnselected: {'identifier': 'robotiq_controllers'}
+[0.000324] (-) JobUnselected: {'identifier': 'robotiq_description'}
+[0.000359] (-) JobUnselected: {'identifier': 'robotiq_driver'}
+[0.000372] (-) JobUnselected: {'identifier': 'robotiq_grippers_sdk_vendor'}
+[0.000381] (-) JobUnselected: {'identifier': 'robotiq_hardware_tests'}
+[0.000415] (-) JobUnselected: {'identifier': 'robotiq_msgs'}
+[0.000833] (-) JobUnselected: {'identifier': 'robotiq_tactile_sdk_vendor'}
+[0.000890] (-) JobUnselected: {'identifier': 'robotiq_test_support'}
+[0.000905] (-) JobUnselected: {'identifier': 'robotiq_tsf'}
+[0.000940] (-) JobUnselected: {'identifier': 'ur5e_grasp_moveit_config'}
+[0.001094] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.001154] (ur5e_grasp_description) JobQueued: {'identifier': 'ur5e_grasp_description', 'dependencies': OrderedDict({'robotiq_grippers_sdk_vendor': '/home/mxr/ur5e_grasp_ws/install/robotiq_grippers_sdk_vendor', 'robotiq_msgs': '/home/mxr/ur5e_grasp_ws/install/robotiq_msgs', 'robotiq_test_support': '/home/mxr/ur5e_grasp_ws/install/robotiq_test_support', 'ur_description': '/home/mxr/ur5e_grasp_ws/install/ur_description', 'robotiq_driver': '/home/mxr/ur5e_grasp_ws/install/robotiq_driver', 'robotiq_controllers': '/home/mxr/ur5e_grasp_ws/install/robotiq_controllers', 'robotiq_description': '/home/mxr/ur5e_grasp_ws/install/robotiq_description'})}
+[0.001209] (ur5e_grasp_description) JobStarted: {'identifier': 'ur5e_grasp_description'}
+[0.025259] (ur5e_grasp_description) JobEnded: {'identifier': 'ur5e_grasp_description', 'rc': 1}
+[0.036021] (-) EventReactorShutdown: {}

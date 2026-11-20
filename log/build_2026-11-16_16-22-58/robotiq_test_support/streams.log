@@ -1,0 +1,34 @@
+[0.030s] Invoking command in '/home/mxr/ur5e_grasp_ws/build/robotiq_test_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mxr/ur5e_grasp_ws/src/ros/grippers/robotiq_test_support -DCMAKE_INSTALL_PREFIX=/home/mxr/ur5e_grasp_ws/install/robotiq_test_support
+[0.106s] -- The C compiler identification is GNU 13.3.0
+[0.162s] -- The CXX compiler identification is GNU 13.3.0
+[0.186s] -- Detecting C compiler ABI info
+[0.291s] -- Detecting C compiler ABI info - done
+[0.297s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.297s] -- Detecting C compile features
+[0.297s] -- Detecting C compile features - done
+[0.309s] -- Detecting CXX compiler ABI info
+[0.419s] -- Detecting CXX compiler ABI info - done
+[0.426s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.426s] -- Detecting CXX compile features
+[0.427s] -- Detecting CXX compile features - done
+[0.432s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.570s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.695s] -- Found ament_cmake_gtest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[0.703s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.780s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.800s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.829s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.849s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.966s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.973s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.110s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.131s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.157s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.273s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.382s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.382s] -- Configured cppcheck include dirs: 
+[1.382s] -- Configured cppcheck exclude dirs and/or files: 
+[1.383s] -- Added test 'lint_cmake' to check CMake code style
+[1.386s] -- Configuring done (1.3s)
+[1.390s] -- Generating done (0.0s)
+[1.392s] -- Build files have been written to: /home/mxr/ur5e_grasp_ws/build/robotiq_test_support

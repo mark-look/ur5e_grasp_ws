@@ -1,0 +1,46 @@
+[0.010s] Invoking command in '/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_moveit_config': /usr/bin/cmake /home/mxr/ur5e_grasp_ws/src/ur5e_grasp_moveit_config -DCMAKE_INSTALL_PREFIX=/home/mxr/ur5e_grasp_ws/install/ur5e_grasp_moveit_config
+[0.070s] -- The C compiler identification is GNU 13.3.0
+[0.125s] -- The CXX compiler identification is GNU 13.3.0
+[0.144s] -- Detecting C compiler ABI info
+[0.250s] -- Detecting C compiler ABI info - done
+[0.256s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.256s] -- Detecting C compile features
+[0.257s] -- Detecting C compile features - done
+[0.269s] -- Detecting CXX compiler ABI info
+[0.387s] -- Detecting CXX compiler ABI info - done
+[0.394s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.395s] -- Detecting CXX compile features
+[0.395s] -- Detecting CXX compile features - done
+[0.399s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.546s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.726s] Error parsing '/home/mxr/ur5e_grasp_ws/src/ur5e_grasp_moveit_config/package.xml':
+[2.376s] Traceback (most recent call last):
+[2.376s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[2.376s]     main()
+[2.376s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[2.376s]     raise e
+[2.376s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[2.376s]     package = parse_package_string(
+[2.376s]               ^^^^^^^^^^^^^^^^^^^^^
+[2.377s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 788, in parse_package_string
+[2.377s]     pkg.validate(warnings=warnings)
+[2.377s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 330, in validate
+[2.377s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[2.377s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/mxr/ur5e_grasp_ws/src/ur5e_grasp_moveit_config/package.xml':
+[2.378s] Invalid email "" for person ""
+[2.378s] Maintainers must have an email address
+[2.378s] Invalid email "" for person ""
+[2.417s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[2.417s]   execute_process(/usr/bin/python3
+[2.417s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[2.417s]   /home/mxr/ur5e_grasp_ws/src/ur5e_grasp_moveit_config/package.xml
+[2.417s]   /home/mxr/ur5e_grasp_ws/build/ur5e_grasp_moveit_config/ament_cmake_core/package.cmake)
+[2.417s]   returned error code 1
+[2.418s] Call Stack (most recent call first):
+[2.418s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.418s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[2.418s]   CMakeLists.txt:6 (ament_package)
+[2.418s] 
+[2.418s] [0m
+[2.418s] -- Configuring incomplete, errors occurred!
+[2.425s] Invoked command in '/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_moveit_config' returned '1': /usr/bin/cmake /home/mxr/ur5e_grasp_ws/src/ur5e_grasp_moveit_config -DCMAKE_INSTALL_PREFIX=/home/mxr/ur5e_grasp_ws/install/ur5e_grasp_moveit_config

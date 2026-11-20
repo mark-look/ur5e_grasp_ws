@@ -1,0 +1,7 @@
+setup.py
+robotiq_description/__init__.py
+robotiq_description/gripper_models.py
+robotiq_description.egg-info/PKG-INFO
+robotiq_description.egg-info/SOURCES.txt
+robotiq_description.egg-info/dependency_links.txt
+robotiq_description.egg-info/top_level.txt

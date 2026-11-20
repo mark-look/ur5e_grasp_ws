@@ -1,0 +1,1 @@
+joint_state_publisher_gui;launch;launch_ros;robot_state_publisher;rviz2;urdf;xacro;ros2_control;joint_state_broadcaster;robotiq_controllers;parallel_gripper_controller;ament_cmake_pytest;ament_index_python;ament_lint_auto;ament_lint_common;python3-numpy;python3-scipy;python3-pytest;python3-yaml

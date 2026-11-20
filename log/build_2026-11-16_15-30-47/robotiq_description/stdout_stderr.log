@@ -1,0 +1,177 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_cmake_pytest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)
+-- Configuring done (2.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/mxr/ur5e_grasp_ws/build/robotiq_description
+Built target ament_cmake_python_symlink_robotiq_description
+running egg_info
+creating robotiq_description.egg-info
+writing robotiq_description.egg-info/PKG-INFO
+writing dependency_links to robotiq_description.egg-info/dependency_links.txt
+writing top-level names to robotiq_description.egg-info/top_level.txt
+writing manifest file 'robotiq_description.egg-info/SOURCES.txt'
+reading manifest file 'robotiq_description.egg-info/SOURCES.txt'
+writing manifest file 'robotiq_description.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_robotiq_description_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/environment/pythonpath.sh
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/environment/pythonpath.dsv
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description-1.3.0-py3.12.egg-info/PKG-INFO
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description-1.3.0-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description-1.3.0-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description-1.3.0-py3.12.egg-info/top_level.txt
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description/__init__.py
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description/gripper_models.py
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.humble.yaml
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.mock.humble.yaml
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.mock.yaml
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.topic_based.humble.yaml
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.topic_based.yaml
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.yaml
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/launch/robotiq_control.launch.py
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/launch/view_gripper.launch.py
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_base_link.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_coupling.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger_left.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger_pad_left.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger_pad_right.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger_right.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle_left.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle_right.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_finger_left.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_finger_right.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle_left.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle_right.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/robotiq_base.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/ur_to_robotiq_adapter.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e/hand-e.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e/left_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e/right_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e_100/hand-e.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e_100/left_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e_100/right_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e_c10/base_front.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e_c10/base_housing.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e_c10/finger_slider.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/hand_e_c10/finger_tip.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_base_link.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_base_link.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_coupling.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger_left.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger_pad_left.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger_pad_right.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger_right.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle_left.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle_right.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_finger_left.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_finger_right.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle_left.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle_right.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_knuckle.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_knuckle.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/robotiq_base.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/hand_e/hand-e.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/hand_e/left_finger.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/hand_e/right_finger.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/hand_e_100/hand-e.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/hand_e_100/left_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/hand_e_100/right_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/hand_e_c10/base.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/hand_e_c10/finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/2f_140.ros2_control.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/2f_85.ros2_control.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/2f_common.ros2_control.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/common.ros2_control.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/hand_e.ros2_control.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/hand_e_c10.ros2_control.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_gripper.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_macro.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_gripper.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_macro.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_gripper.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_gripper.ros2_control.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_gripper.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_hand_e_c10_gripper.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_hand_e_c10_macro.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_hand_e_gripper.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/robotiq_hand_e_macro.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/urdf/ur_to_robotiq_adapter.urdf.xacro
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/rviz/view_urdf.rviz
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/rviz/view_urdf_2f_140.rviz
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/left_finger.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/left_finger_tip.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/left_inner_knuckle.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/left_knuckle.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/right_finger.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/right_finger_tip.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/right_inner_knuckle.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/right_knuckle.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/robotiq_base.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/visual/ur_to_robotiq_adapter.dae
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/left_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/left_finger_tip.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/left_inner_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/left_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/right_finger.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/right_finger_tip.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/right_inner_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/right_knuckle.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/robotiq_base.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/meshes/collision/ur_to_robotiq_adapter.stl
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/ament_index/resource_index/package_run_dependencies/robotiq_description
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/ament_index/resource_index/parent_prefix_path/robotiq_description
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/environment/path.sh
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/environment/path.dsv
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/local_setup.bash
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/local_setup.sh
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/local_setup.zsh
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/local_setup.dsv
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/package.dsv
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/ament_index/resource_index/packages/robotiq_description
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig.cmake
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig-version.cmake
+-- Symlinking: /home/mxr/ur5e_grasp_ws/install/robotiq_description/share/robotiq_description/package.xml
+Listing '/home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description'...
+Compiling '/home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description/__init__.py'...
+Compiling '/home/mxr/ur5e_grasp_ws/install/robotiq_description/lib/python3.12/site-packages/robotiq_description/gripper_models.py'...

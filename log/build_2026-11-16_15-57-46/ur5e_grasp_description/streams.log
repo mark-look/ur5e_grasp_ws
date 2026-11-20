@@ -1,0 +1,42 @@
+[0.011s] Invoking command in '/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mxr/ur5e_grasp_ws/src/ur5e_grasp_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description
+[0.076s] -- The C compiler identification is GNU 13.3.0
+[0.131s] -- The CXX compiler identification is GNU 13.3.0
+[0.148s] -- Detecting C compiler ABI info
+[0.250s] -- Detecting C compiler ABI info - done
+[0.256s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.256s] -- Detecting C compile features
+[0.257s] -- Detecting C compile features - done
+[0.268s] -- Detecting CXX compiler ABI info
+[0.378s] -- Detecting CXX compiler ABI info - done
+[0.385s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.385s] -- Detecting CXX compile features
+[0.385s] -- Detecting CXX compile features - done
+[0.390s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.536s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.592s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.726s] -- Configuring done (0.7s)
+[0.728s] -- Generating done (0.0s)
+[0.729s] -- Build files have been written to: /home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description
+[0.736s] Invoked command in '/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mxr/ur5e_grasp_ws/src/ur5e_grasp_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description
+[0.737s] Invoking command in '/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description -- -j8 -l8
+[0.785s] Invoked command in '/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description -- -j8 -l8
+[0.798s] Invoking command in '/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description
+[0.808s] -- Install configuration: ""
+[0.808s] -- Execute custom install script
+[0.808s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/urdf/ur5e_robotiq.urdf.xacro
+[0.823s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ament_index/resource_index/package_run_dependencies/ur5e_grasp_description
+[0.835s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ament_index/resource_index/parent_prefix_path/ur5e_grasp_description
+[0.847s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/environment/ament_prefix_path.sh
+[0.859s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/environment/ament_prefix_path.dsv
+[0.870s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/environment/path.sh
+[0.881s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/environment/path.dsv
+[0.891s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/local_setup.bash
+[0.902s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/local_setup.sh
+[0.913s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/local_setup.zsh
+[0.926s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/local_setup.dsv
+[0.936s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/package.dsv
+[0.948s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ament_index/resource_index/packages/ur5e_grasp_description
+[0.959s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/cmake/ur5e_grasp_descriptionConfig.cmake
+[0.971s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/cmake/ur5e_grasp_descriptionConfig-version.cmake
+[0.981s] -- Symlinking: /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/package.xml
+[0.993s] Invoked command in '/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mxr/ros2_ws/install/slider_action_py:/home/mxr/ros2_ws/install/ros2_learning:/home/mxr/ros2_ws/install/py_srvcli:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description

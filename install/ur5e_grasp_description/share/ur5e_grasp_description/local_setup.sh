@@ -1,0 +1,1 @@
+/home/mxr/ur5e_grasp_ws/build/ur5e_grasp_description/ament_cmake_environment_hooks/local_setup.sh

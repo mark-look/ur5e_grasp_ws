@@ -1,0 +1,6 @@
+{
+  "package_name": "robotiq_msgs",
+  "non_idl_tuples": [
+    "/home/mxr/ur5e_grasp_ws/src/ros/grippers/robotiq_msgs:msg/GripperStatus.msg"
+  ]
+}

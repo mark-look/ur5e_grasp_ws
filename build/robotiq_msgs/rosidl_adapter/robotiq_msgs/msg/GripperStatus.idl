@@ -1,0 +1,59 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robotiq_msgs/msg/GripperStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module robotiq_msgs {
+  module msg {
+    module GripperStatus_Constants {
+      @verbatim (language="comment", text=
+        "gOBJ. The gripper's own answer to \"am I holding something\", and the only" "\n"        "authoritative one: a stall flag or a position comparison is a guess at this.")
+      const uint8 MOVING = 0;
+      const uint8 DETECTED_WHILE_OPENING = 1;
+      const uint8 DETECTED_WHILE_CLOSING = 2;
+      const uint8 AT_REQUESTED_POSITION = 3;
+      @verbatim (language="comment", text=
+        "gFLT, as the instruction manual numbers it. The register is four bits wide, so" "\n"        "a code the manual does not list can still arrive: treat it as an undefined" "\n"        "fault, which gripper_fault_severity reports as major." "\n"        "" "\n"        "UNKNOWN is outside the register, and says the gripper did not report a fault" "\n"        "this cycle, either because the hardware exports no fault interface or because" "\n"        "the reading failed. It is not NONE: an unfaulted gripper and a gripper that" "\n"        "is not reporting a fault state are different, and only one of them is safe to act on.")
+      const uint8 GRIPPER_FAULT_UNKNOWN = 255;
+      const uint8 GRIPPER_FAULT_NONE = 0;
+      const uint8 GRIPPER_FAULT_ACTION_DELAYED = 5;
+      const uint8 GRIPPER_FAULT_ACTIVATION_REQUIRED = 7;
+      const uint8 GRIPPER_FAULT_OVER_TEMPERATURE = 8;
+      const uint8 GRIPPER_FAULT_NO_COMMUNICATION = 9;
+      const uint8 GRIPPER_FAULT_UNDER_VOLTAGE = 10;
+      const uint8 GRIPPER_FAULT_AUTOMATIC_RELEASE_IN_PROGRESS = 11;
+      const uint8 GRIPPER_FAULT_INTERNAL_FAULT = 12;
+      const uint8 GRIPPER_FAULT_ACTIVATION_FAULT = 13;
+      const uint8 GRIPPER_FAULT_OVERCURRENT = 14;
+      const uint8 GRIPPER_FAULT_AUTOMATIC_RELEASE_COMPLETE = 15;
+      @verbatim (language="comment", text=
+        "How bad the gripper fault is. A major fault clears only on a reactivation;" "\n"        "the manual calls the warning tier \"priority faults\". UNKNOWN accompanies" "\n"        "GRIPPER_FAULT_UNKNOWN: the two fields are exported together or not at all.")
+      const uint8 GRIPPER_FAULT_SEVERITY_UNKNOWN = 255;
+      const uint8 GRIPPER_FAULT_SEVERITY_NONE = 0;
+      const uint8 GRIPPER_FAULT_SEVERITY_WARNING = 1;
+      const uint8 GRIPPER_FAULT_SEVERITY_MINOR = 2;
+      const uint8 GRIPPER_FAULT_SEVERITY_MAJOR = 3;
+    };
+    @verbatim (language="comment", text=
+      "What the gripper reports about itself, decoded. The driver reads these out of" "\n"
+      "the status block every exchange cycle; a broadcaster republishes them here so" "\n"
+      "that a client off the controller manager can read them without re-deriving" "\n"
+      "anything from a register.")
+    struct GripperStatus {
+      std_msgs::msg::Header header;
+
+      uint8 object_detection;
+
+      @verbatim (language="comment", text=
+        "gCU in amperes. Motor current, not grip force, and not convertible to one.")
+      double motor_current;
+
+      @default (value=255)
+      uint8 gripper_fault;
+
+      @default (value=255)
+      uint8 gripper_fault_severity;
+    };
+  };
+};

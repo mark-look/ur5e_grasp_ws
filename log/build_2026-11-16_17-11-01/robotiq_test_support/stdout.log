@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/src/rclcpp_gtest_main.cpp
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/ament_index/resource_index/package_run_dependencies/robotiq_test_support
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/ament_index/resource_index/parent_prefix_path/robotiq_test_support
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/environment/ament_prefix_path.sh
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/environment/ament_prefix_path.dsv
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/environment/path.sh
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/environment/path.dsv
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/local_setup.bash
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/local_setup.sh
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/local_setup.zsh
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/local_setup.dsv
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/package.dsv
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/ament_index/resource_index/packages/robotiq_test_support
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/cmake/export_robotiq_test_supportExport.cmake
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/cmake/robotiq_test_supportConfig.cmake
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/cmake/robotiq_test_supportConfig-version.cmake
+-- Installing: /home/mxr/ur5e_grasp_ws/install/robotiq_test_support/share/robotiq_test_support/package.xml
