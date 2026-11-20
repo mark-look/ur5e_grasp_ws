@@ -1,4 +1,5 @@
 <!-- 只编译目标包 -->
+cd ur5e_grasp_ws
 source /opt/ros/jazzy/setup.bash
 
 colcon build \
@@ -11,8 +12,6 @@ colcon build \
   --symlink-install
 
 <!-- 软件渲染 -->
-cd ~/ur5e_grasp_ws
-
 source /opt/ros/jazzy/setup.bash
 source install/setup.bash
 
