@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+import sys
 import rclpy
+
 from rclpy.node import Node
 from rclpy.action import ActionClient
 
@@ -8,157 +10,287 @@ from moveit_msgs.action import MoveGroup
 from moveit_msgs.msg import Constraints, JointConstraint
 
 
-class MoveItExecuteTest(Node):
+class MoveItPlanTest(Node):
 
     def __init__(self):
-        super().__init__('moveit_execute_test')
+        super().__init__("moveit_plan_test")
 
         self.client = ActionClient(
             self,
             MoveGroup,
-            '/move_action'
+            "/move_action"
         )
 
-        self.get_logger().info('Waiting for MoveGroup action...')
+    def run(self):
 
-        if not self.client.wait_for_server(timeout_sec=10.0):
+        self.get_logger().info(
+            "Waiting for MoveGroup action..."
+        )
+
+        if not self.client.wait_for_server(timeout_sec=30.0):
             self.get_logger().error(
-                'MoveGroup action server unavailable'
+                "MoveGroup action server unavailable!"
             )
-            rclpy.shutdown()
-            return
+            return 1
+
+        # ==========================================
+        # Create MoveGroup request
+        # ==========================================
 
         goal = MoveGroup.Goal()
+        request = goal.request
 
-        # 机械臂规划组
-        goal.request.group_name = 'ur_manipulator'
+        request.group_name = "ur_manipulator"
 
-        # 使用 OMPL 规划器
-        goal.request.pipeline_id = 'ompl'
-        goal.request.planner_id = 'RRTConnectkConfigDefault'
+        # Use OMPL planning pipeline
+        request.pipeline_id = "ompl"
 
-        # 规划参数
-        goal.request.num_planning_attempts = 10
-        goal.request.allowed_planning_time = 10.0
+        # Let MoveIt select its default planner
+        request.planner_id = ""
 
-        # 速度和加速度比例
-        goal.request.max_velocity_scaling_factor = 0.1
-        goal.request.max_acceleration_scaling_factor = 0.1
+        request.num_planning_attempts = 5
+        request.allowed_planning_time = 10.0
 
-        # 使用当前机械臂状态作为起始状态
-        goal.request.start_state.is_diff = True
+        request.max_velocity_scaling_factor = 0.1
+        request.max_acceleration_scaling_factor = 0.1
 
-        # 设置目标关节约束
+        # Use current robot state
+        request.start_state.is_diff = True
+
+        # ==========================================
+        # Joint target
+        # ==========================================
+
+        target_positions = {
+            "shoulder_pan_joint": 0.2,
+            "shoulder_lift_joint": -0.5,
+            "elbow_joint": 0.8,
+            "wrist_1_joint": -0.3,
+            "wrist_2_joint": -1.2,
+            "wrist_3_joint": 0.2,
+        }
+
         constraints = Constraints()
+        constraints.name = "ur5e_joint_space_test"
 
-        joint_names = [
-            'shoulder_pan_joint',
-            'shoulder_lift_joint',
-            'elbow_joint',
-            'wrist_1_joint',
-            'wrist_2_joint',
-            'wrist_3_joint'
-        ]
+        for joint_name, position in target_positions.items():
 
-        positions = [
-            0.2,
-            -0.5,
-            0.8,
-            -0.3,
-            -1.2,
-            0.2
-        ]
+            joint_constraint = JointConstraint()
 
-        for name, position in zip(joint_names, positions):
+            joint_constraint.joint_name = joint_name
+            joint_constraint.position = position
 
-            jc = JointConstraint()
+            joint_constraint.tolerance_above = 0.01
+            joint_constraint.tolerance_below = 0.01
 
-            jc.joint_name = name
-            jc.position = position
+            joint_constraint.weight = 1.0
 
-            jc.tolerance_above = 0.01
-            jc.tolerance_below = 0.01
-            jc.weight = 1.0
-
-            constraints.joint_constraints.append(jc)
-
-        goal.request.goal_constraints.append(constraints)
-
-        # 关键：False 表示规划后执行
-        goal.planning_options.plan_only = False
-
-        goal.planning_options.planning_scene_diff.is_diff = True
-
-        self.get_logger().info(
-            'Sending planning and execution request...'
-        )
-
-        future = self.client.send_goal_async(goal)
-
-        future.add_done_callback(
-            self.goal_response_callback
-        )
-
-    def goal_response_callback(self, future):
-
-        handle = future.result()
-
-        if not handle.accepted:
-
-            self.get_logger().error(
-                'Planning request rejected'
+            constraints.joint_constraints.append(
+                joint_constraint
             )
 
-            rclpy.shutdown()
-            return
+        request.goal_constraints = [constraints]
+
+        # ==========================================
+        # Planning only - DO NOT EXECUTE
+        # ==========================================
+
+        goal.planning_options.plan_only = True
+        goal.planning_options.replan = False
 
         self.get_logger().info(
-            'Planning request accepted'
+            "Sending planning request..."
         )
 
-        future = handle.get_result_async()
-
-        future.add_done_callback(
-            self.result_callback
+        self.get_logger().info(
+            "Group: ur_manipulator"
         )
 
-    def result_callback(self, future):
+        self.get_logger().info(
+            "Pipeline: ompl"
+        )
 
-        result = future.result().result
+        self.get_logger().info(
+            "Planner: default"
+        )
+
+        self.get_logger().info(
+            "Execution: DISABLED"
+        )
+
+        # ==========================================
+        # Send goal
+        # ==========================================
+
+        send_future = self.client.send_goal_async(goal)
+
+        rclpy.spin_until_future_complete(
+            self,
+            send_future,
+            timeout_sec=35.0
+        )
+
+        if not send_future.done():
+
+            self.get_logger().error(
+                "Timeout waiting for planning request!"
+            )
+
+            return 1
+
+        goal_handle = send_future.result()
+
+        if goal_handle is None or not goal_handle.accepted:
+
+            self.get_logger().error(
+                "Planning request rejected!"
+            )
+
+            return 1
+
+        self.get_logger().info(
+            "Planning request accepted."
+        )
+
+        # ==========================================
+        # Get result
+        # ==========================================
+
+        result_future = goal_handle.get_result_async()
+
+        rclpy.spin_until_future_complete(
+            self,
+            result_future,
+            timeout_sec=40.0
+        )
+
+        if not result_future.done():
+
+            self.get_logger().error(
+                "Timeout waiting for planning result!"
+            )
+
+            return 1
+
+        wrapped_result = result_future.result()
+
+        if wrapped_result is None:
+
+            self.get_logger().error(
+                "No result returned!"
+            )
+
+            return 1
+
+        result = wrapped_result.result
 
         error_code = result.error_code.val
 
+        # ==========================================
+        # Print result
+        # ==========================================
+
         self.get_logger().info(
-            f'Error code: {error_code}'
+            f"MoveIt error code: {error_code}"
         )
 
         self.get_logger().info(
-            f'Planning time: {result.planning_time:.3f} seconds'
+            f"Planning time: {result.planning_time:.3f} seconds"
         )
+
+        self.get_logger().info(
+            f"Trajectory joints: "
+            f"{result.planned_trajectory.joint_trajectory.joint_names}"
+        )
+
+        self.get_logger().info(
+            f"Trajectory points: "
+            f"{len(result.planned_trajectory.joint_trajectory.points)}"
+        )
+
+        self.get_logger().info(
+            f"Full MoveIt result: {result}"
+        )
+
+        # ==========================================
+        # Success / Failure
+        # ==========================================
 
         if error_code == 1:
 
             self.get_logger().info(
-                'SUCCESS: Planning and execution completed!'
+                "===================================="
             )
 
-        else:
-
-            self.get_logger().error(
-                'FAILED: Planning or execution failed!'
+            self.get_logger().info(
+                "PLANNING SUCCESS!"
             )
 
-        rclpy.shutdown()
+            self.get_logger().info(
+                "Trajectory generated successfully."
+            )
+
+            self.get_logger().info(
+                "Robot has NOT moved."
+            )
+
+            self.get_logger().info(
+                "===================================="
+            )
+
+            return 0
+
+        self.get_logger().error(
+            "===================================="
+        )
+
+        self.get_logger().error(
+            "PLANNING FAILED!"
+        )
+
+        self.get_logger().error(
+            "Robot has NOT moved."
+        )
+
+        self.get_logger().error(
+            "===================================="
+        )
+
+        return 1
 
 
-def main():
+def main(args=None):
 
-    rclpy.init()
+    rclpy.init(args=args)
 
-    node = MoveItExecuteTest()
+    node = MoveItPlanTest()
 
-    rclpy.spin(node)
+    try:
+
+        exit_code = node.run()
+
+    except KeyboardInterrupt:
+
+        exit_code = 130
+
+    except Exception as exc:
+
+        node.get_logger().error(
+            f"Unexpected error: {exc}"
+        )
+
+        exit_code = 10
+
+    finally:
+
+        node.destroy_node()
+
+        if rclpy.ok():
+            rclpy.shutdown()
+
+    return exit_code
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+
+    sys.exit(main())
