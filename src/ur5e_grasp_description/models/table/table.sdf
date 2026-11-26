@@ -1,30 +1,33 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <sdf version="1.9">
   <model name="table">
 
-    <!-- 工作台固定，不受重力影响 -->
+    <!-- Static worktable -->
     <static>true</static>
 
     <link name="table_link">
 
-      <!-- ================= 桌面 ================= -->
+      <!-- ================= 桌面 Collision ================= -->
 
       <collision name="table_top_collision">
         <pose>0 0 0.40 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.8 0.8 0.04</size>
+            <size>0.36 0.80 0.04</size>
           </box>
         </geometry>
       </collision>
+
+      <!-- ================= 桌面 Visual ================= -->
 
       <visual name="table_top_visual">
         <pose>0 0 0.40 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.8 0.8 0.04</size>
+            <size>0.36 0.80 0.04</size>
           </box>
         </geometry>
+
         <material>
           <ambient>0.45 0.45 0.45 1</ambient>
           <diffuse>0.60 0.60 0.60 1</diffuse>
@@ -35,7 +38,7 @@
       <!-- ================= 桌腿 1 ================= -->
 
       <collision name="leg_1_collision">
-        <pose>0.35 0.35 0.19 0 0 0</pose>
+        <pose>0.155 0.35 0.19 0 0 0</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.38</size>
@@ -44,7 +47,7 @@
       </collision>
 
       <visual name="leg_1_visual">
-        <pose>0.35 0.35 0.19 0 0 0</pose>
+        <pose>0.155 0.35 0.19 0 0 0</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.38</size>
@@ -59,7 +62,7 @@
       <!-- ================= 桌腿 2 ================= -->
 
       <collision name="leg_2_collision">
-        <pose>-0.35 0.35 0.19 0 0 0</pose>
+        <pose>-0.155 0.35 0.19 0 0 0</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.38</size>
@@ -68,7 +71,7 @@
       </collision>
 
       <visual name="leg_2_visual">
-        <pose>-0.35 0.35 0.19 0 0 0</pose>
+        <pose>-0.155 0.35 0.19 0 0 0</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.38</size>
@@ -83,7 +86,7 @@
       <!-- ================= 桌腿 3 ================= -->
 
       <collision name="leg_3_collision">
-        <pose>0.35 -0.35 0.19 0 0 0</pose>
+        <pose>0.155 -0.35 0.19 0 0 0</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.38</size>
@@ -92,7 +95,7 @@
       </collision>
 
       <visual name="leg_3_visual">
-        <pose>0.35 -0.35 0.19 0 0 0</pose>
+        <pose>0.155 -0.35 0.19 0 0 0</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.38</size>
@@ -107,7 +110,7 @@
       <!-- ================= 桌腿 4 ================= -->
 
       <collision name="leg_4_collision">
-        <pose>-0.35 -0.35 0.19 0 0 0</pose>
+        <pose>-0.155 -0.35 0.19 0 0 0</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.38</size>
@@ -116,7 +119,7 @@
       </collision>
 
       <visual name="leg_4_visual">
-        <pose>-0.35 -0.35 0.19 0 0 0</pose>
+        <pose>-0.155 -0.35 0.19 0 0 0</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.38</size>
