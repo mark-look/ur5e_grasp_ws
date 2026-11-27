@@ -4,6 +4,7 @@
 /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/launch/__pycache__/gazebo.launch.cpython-312.pyc
 /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/launch/display.launch.py
 /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/launch/gazebo.launch.py
+/home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/launch/grasp_workflow.launch.py
 /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ament_index/resource_index/package_run_dependencies/ur5e_grasp_description
 /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ament_index/resource_index/parent_prefix_path/ur5e_grasp_description
 /home/mxr/ur5e_grasp_ws/install/ur5e_grasp_description/share/ur5e_grasp_description/environment/ament_prefix_path.sh

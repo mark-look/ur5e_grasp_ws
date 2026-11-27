@@ -96,3 +96,23 @@ python3 ~/ur5e_grasp_ws/src/ur5e_grasp_description/scripts/add_grasp_scene.py
 gz model --list
 <!-- 执行预抓取程序 -->
 python3 ~/ur5e_grasp_ws/src/ur5e_grasp_description/scripts/execute_pregrasp.py
+
+<!-- launch文件 -->
+cd ~/ur5e_grasp_ws
+
+source /opt/ros/jazzy/setup.bash
+
+colcon build \
+--packages-select ur5e_grasp_description \
+--packages-ignore \
+robotiq_controllers \
+robotiq_driver \
+robotiq_msgs \
+robotiq_grippers_sdk_vendor \
+--symlink-install
+///////////////////////////////////////////////
+source /opt/ros/jazzy/setup.bash
+
+source ~/ur5e_grasp_ws/install/setup.bash
+
+ros2 launch ur5e_grasp_description grasp_workflow.launch.py

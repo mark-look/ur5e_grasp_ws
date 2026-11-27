@@ -49,12 +49,12 @@ class IKJointPlanTest(Node):
         # IK 返回的六个关节角。
         # 对角度进行 2*pi 等效归一化，避免不必要的整圈旋转。
         ik_solution = {
-            'shoulder_pan_joint': -3.06055784877752,
-            'shoulder_lift_joint': 4.326377438314895,
-            'elbow_joint': -0.5523785543909919,
-            'wrist_1_joint': -3.4362850932520166,
-            'wrist_2_joint': 2.974646872933269,
-            'wrist_3_joint': 3.443104283506725,
+            'shoulder_pan_joint': -3.052235987,
+            'shoulder_lift_joint': -1.870451642,
+            'elbow_joint': -0.845787743,
+            'wrist_1_joint': 3.055680543,
+            'wrist_2_joint': 2.947740223,
+            'wrist_3_joint': -2.807810081,
         }
 
         target_positions = {
@@ -71,8 +71,8 @@ class IKJointPlanTest(Node):
 
             jc.joint_name = joint_name
             jc.position = position
-            jc.tolerance_above = 0.03
-            jc.tolerance_below = 0.03
+            jc.tolerance_above = 0.003
+            jc.tolerance_below = 0.003
             jc.weight = 1.0
 
             constraints.joint_constraints.append(jc)
